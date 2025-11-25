@@ -21,7 +21,7 @@ By the end of this level, you should:
 
 - See **two distinct Applications** in the Argo CD dashboard (one per environment)
 - Ensure each Application deploys to its **own isolated namespace**
-- **Make the system resilient** so changes from outside Git cannot break it
+- **Make the system resilient** so Argo CD automatically reverts manual changes made to the cluster
 - Confirm that **updates happen automatically** without leaving stale resources behind
 
 ## 🧠 What You'll Learn
@@ -36,8 +36,7 @@ Your Codespace comes pre-configured with the following tools to help you solve t
 
 - [`kubectl`](https://kubernetes.io/docs/reference/kubectl/): The Kubernetes command-line tool for interacting with
   the cluster
-- [`kubectx & kubens`](https://github.com/ahmetb/kubectx): Fast way to switch between Kubernetes contexts and
-  namespaces
+- [`kubens`](https://github.com/ahmetb/kubectx): Fast way to switch between Kubernetes namespaces
 - [`k9s`](https://k9scli.io/): A terminal-based UI to interact with your Kubernetes clusters
 
 ## ✅ How to Play
@@ -62,7 +61,7 @@ Your Codespace comes pre-configured with the following tools to help you solve t
   around 5 minutes.
 
 > 💡 **Tip:** To check the progress press `Cmd + Shift + P` (or `Ctrl + Shift + P` on Windows/Linux) and search for
-`View Creation Log`.
+`View Creation Log` (available after a few moments once the Codespace has initialized).
 
 ### 4. Access the Argo CD Dashboard
 

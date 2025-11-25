@@ -10,7 +10,7 @@ OBJECTIVE="By the end of this level, you should:
 
 - See two distinct Applications in the Argo CD dashboard (one per environment)
 - Ensure each Application deploys to its own isolated namespace
-- Make the system resilient so changes from outside Git cannot break it
+- Make the system resilient so Argo CD automatically reverts manual changes made to the cluster
 - Confirm that updates happen automatically without leaving stale resources behind"
 
 DOCS_URL="https://dynatrace-oss.github.io/open-ecosystem-challenges/01-echoes-lost-in-orbit/beginner"
